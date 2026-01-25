@@ -136,5 +136,34 @@ document.getElementById("mysubmit").onclick = function () {
         circumference.toFixed(2) + " cm";
 };
 
+// Math Operations
+let p = 3.55
+let q = 3.55
+let r = 16.55
 
 
+q = Math.round(q);  //round up
+p = Math.floor(p);  // round down
+r = Math.log(r);    // log 
+s = Math.sin(r);    //sin
+let max = Math.max(p,q,r,s);   // for min and max
+
+console.log(p);
+console.log(q);
+console.log(r);
+console.log(s);
+console.log(max);
+
+
+// RANDOM NUMBER GENERATOR
+let randmNum = Math.random();
+
+console.log(randmNum);
+
+
+const min = 50
+const max_ = 100
+
+let r_num = Math.floor(Math.random() * (max_ - min)) + max_;
+
+console.log(r_num);
