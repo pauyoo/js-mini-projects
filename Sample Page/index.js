@@ -167,3 +167,72 @@ const max_ = 100
 let r_num = Math.floor(Math.random() * (max_ - min)) + max_;
 
 console.log(r_num);
+
+
+// CONDITIONAL STATEMENTS
+let new_age = 19;
+
+if(new_age > 18){
+    console.log("You are old enough");
+}
+else {
+    console.log("denied");
+}
+
+
+let time = 8;
+
+if (time >= 8){
+    console.log("Perfect time")
+}
+else {
+    console.log("you are late")
+}
+
+// Using booleans
+let stud = true;
+
+if(stud){
+    console.log("He is a student")
+}
+else{
+    console.log("He is not a student")
+}
+
+// IF ELSE
+let license_age = 25;
+let has_licesese = false;
+
+if(license_age >= 16){
+    console.log("He is old enough to drive");
+
+    if(has_licesese){
+        console.log("You have your license");
+    }
+    else{
+        console.log("You do not have your license yet");
+    }
+}
+
+else{
+    console.log("He is NOT old enough to drive")
+}
+
+
+site_age =20;
+
+if (site_age>=18){
+    console.log("You can enter this site");
+}
+else if(site_age ==0){
+    console.log("you were just born");
+}
+else if(site_age <0){
+    console.log("Your age cant be below 0");
+}
+else if(site_age>=100){
+    console.log("You are too old")
+}
+else{
+    console.log("You must be 18+ to enter this site")
+}
