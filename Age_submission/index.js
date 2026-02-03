@@ -9,8 +9,8 @@ mysubmit.onclick = function(){
     site_age = mytext.value;
     site_age = Number(site_age);
     
-    if (site_age>=18){
-        resultElement.textContent = ("You can enter this site");
+    if (site_age>=100){
+        resultElement.textContent = ("You are too old to enter this site");
     }
     else if(site_age ==0){
         resultElement.textContent = ("you were just born");
@@ -18,8 +18,8 @@ mysubmit.onclick = function(){
     else if(site_age <0){
         resultElement.textContent = ("Your age cant be below 0");
     }
-    else if(site_age>=100){
-        resultElement.textContent = ("You are too old")
+    else if(site_age>=18){
+        resultElement.textContent = ("You are PERFECT for this site")
     }
     else{
         resultElement.textContent = "(You must be 18+ to enter this site)";
