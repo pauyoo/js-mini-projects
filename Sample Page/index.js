@@ -273,3 +273,135 @@ mysubmit.onclick = function(){
     
 }
 
+// Ternary Operator 
+let item = 20;
+let message = item >= 18 ? "Good to go" : "Not good";
+console.log(message);
+
+let timing = 16;
+let greeting = timing < 12 ? "Good morning" : "Good evening";
+console.log(greeting);
+
+let isstudent = true;
+let stude = isstudent ? "A student" : "Not a student";
+console.log(stude);
+
+
+// Terniary Operator (Short form to IFelse statements)
+let purchase_ammount = 120;
+let discount = purchase_ammount >= 100 ? 10 : 0; // if purchase above 100, get 10 % discount else get no discount
+console.log(`Your total is $${purchase_ammount - purchase_ammount * (discount/100)}`)
+
+// Switch Statements (Another alternative to Ifelse)
+
+let day = 6;
+
+switch(day){
+    case 1: 
+        console.log("Its Monday")
+        break;
+    case 2: 
+        console.log("Its Tuesday")
+        break;
+    case 3: 
+        console.log("Its wednessday")
+        break;
+    case 4: 
+        console.log("Its Thursday")
+        break;
+    case 5: 
+        console.log("Its Friday")
+        break;
+    default: 
+        console.log("No day")
+        break;
+}
+
+// Another Switch Sample for grading system without Conditional Statements
+let test_score = 80;
+let letter_grade;
+
+switch(true){
+    case test_score >=70:
+        letter_grade = "A";
+        break;
+
+    case test_score >= 60: 
+        console.log("B")
+        break;
+    case test_score >= 50:
+        console.log("C")
+        break;
+    case test_score >= 40:
+        console.log("D");
+        break;
+    default:
+        letter_grade = "f";
+}
+
+console.log(letter_grade);
+
+// String methods to manipulate and work with text strings 
+let my_new_username = "Atoyebi1";
+console.log(my_new_username.charAt(1))  // To return a char () in the string
+
+let new_username = "Atoyebi1$$";
+console.log(new_username.length); //String length
+
+let new_username_trim = "Atoyebi1       ";
+new_username_trim = new_username_trim.trim();  // tO TRIM STRING extra spaces
+console.log(new_username_trim)
+
+new_username_to_uppercase = new_username.toUpperCase();
+console.log(new_username_to_uppercase);  //String to Uppercase
+
+let user_result = new_username.startsWith(" ");     //return bool if its starts with extra spaces
+console.log(user_result);
+
+// Applying on IF statements
+let latest_username = "Atoyebi Paul";
+let new_result = latest_username.includes(" ");
+
+if(new_result){
+    console.log("username cannot start with a space ' '");
+}
+else{
+    console.log(latest_username);
+}
+
+// String manipulation on phone number in signup forms
+let phone_number = "234 815 6879 564";
+
+phone_number = phone_number.replaceAll(" ", "-");
+phone_number_pad = phone_number.padEnd(20, "0");  // Manipulating String
+
+console.log(phone_number);
+console.log(phone_number_pad);
+
+// String slicing
+my_full_name = "Atoyebi Paul"
+
+let first_name = my_full_name.slice(0,7);
+let last_name = my_full_name.slice(8,13);
+
+let first_char = my_full_name.slice(-1);
+
+console.log(first_name);
+console.log(last_name);
+console.log(first_char);
+
+
+let first_Name = my_full_name.slice(0, my_full_name.indexOf(" "));      // Slicing First_name and last_name 
+let last_Name = my_full_name.slice(my_full_name.indexOf(" ") + 1);
+
+console.log(first_Name);
+console.log(last_Name);
+
+const my_email = "paulayodele04@gmail.com"
+
+let UserName = email.slice(0, email.indexOf("@"));      // Slice gmail to username and extention
+let extension = email.slice(email.indexOf("@") + 1);
+
+console.log(UserName);
+console.log(extension);
+
