@@ -1,4 +1,6 @@
 // WHILE LOOPS
+// Prompts: requires an input value
+
 const prompt = require("prompt-sync")();
 
 let balance = 1000;
