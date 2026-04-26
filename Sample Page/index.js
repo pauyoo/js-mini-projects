@@ -405,3 +405,47 @@ let extension = email.slice(email.indexOf("@") + 1);
 console.log(UserName);
 console.log(extension);
 
+
+// Functions in JavaScript
+function greet() {
+    console.log("Hello Paul");
+}
+greet() // Calling the function
+
+function add() {
+    let first_number = 5;
+    let second_number = 10;
+    total = (first_number + second_number);
+    console.log(total);
+}
+add()
+
+function full_name() {
+    let firstname = "Paul";
+    let lastname = " Atoyebi";
+    govt_name = (firstname + lastname);
+    console.log(govt_name);
+}
+full_name()
+
+/*
+let sch_year = prompt("Enter School year");
+if (sch_year == 2025){
+    alert("You're right")
+}
+else
+    alert("Wrong") 
+*/
+
+function yearreg() {
+    let production_year = 2025;
+    let expiry_date = 2027;
+    let consumption = prompt("Enter consumption sate?");
+
+    if (consumption == 2025) {
+        alert("You're safe")
+    }
+    else
+        alert("Expired")
+}
+yearreg()
