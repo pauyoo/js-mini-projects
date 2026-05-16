@@ -437,10 +437,11 @@ else
     alert("Wrong") 
 */
 
+
 function yearreg() {
     let production_year = 2025;
     let expiry_date = 2027;
-    let consumption = prompt("Enter consumption sate?");
+    let consumption = prompt("Enter consumption date?");
 
     if (consumption == 2025) {
         alert("You're safe")
@@ -449,3 +450,11 @@ function yearreg() {
         alert("Expired")
 }
 yearreg()
+
+let James = prompt("How old are you James");
+while (James < 3);{
+    console.log (James);
+    James++;
+}
+
+
